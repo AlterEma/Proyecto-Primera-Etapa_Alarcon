@@ -10,6 +10,44 @@
     src: url("Tipografia/PermanentMarker-Regular.ttf");
 }
 
+@keyframes botones{
+
+    1%{
+        border-top: 5px solid #3a3a3a;
+    }
+    2%{
+        border-top: 5px solid #c7c7c7;
+    }
+
+    24%{
+        border-right: 5px solid #1f1f1f;
+    }
+    25%{
+        border-right: 5px solid #c7c7c7;
+    }
+
+    48%{
+        border-bottom: 5px solid #1f1f1f;
+    }
+    49%{
+        border-bottom: 5px solid #1f1f1f;
+    }
+    50%{
+        border-bottom: 5px solid #c7c7c7;
+    }
+
+    75%{
+        border-left: 5px solid #1f1f1f;
+    }
+    99%{
+        border-left: 5px solid #c7c7c7;
+    }
+    100%{
+        border-left: 5px solid #1f1f1f;
+    }
+
+}
+
 /* Universal*/
 ul, li{
     list-style: none;
@@ -17,12 +55,6 @@ ul, li{
 
 a{
     text-decoration: none;
-}
-
-.divlogo h1{
-    font-family: AnimeJAV;
-    color: rgb(255, 255, 255);
-    font-size: 80px;
 }
 
 .divlogo img{
@@ -99,7 +131,7 @@ a{
     
     }
 
-    .divlogo h1{
+    .divlogo h1 a{
 
         font-family: AnimeJAV;
         color: rgb(255, 255, 255);
@@ -948,12 +980,13 @@ a{
 
          display: grid;
          height: auto;
+         padding-bottom: 5px;
          width: 100%;
          background-color: black;
          grid-template-columns: 50% 50%;
-         grid-template-rows: 100px 50px;
-         grid-template-areas: "a1 a1"
-                              "a4 a4";              
+         grid-template-rows: 100px 5vw;
+         grid-template-areas: "logo logo"
+                              "nav nav";              
         
     }
 
@@ -962,7 +995,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        grid-area: a4;
+        grid-area: nav;
 
     }
 
@@ -972,15 +1005,15 @@ a{
         text-decoration: none;
         padding: 5px;
         color: #c7c7c7;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
+        border: 5px solid transparent;
 
     }
 
     .ilmenu:hover{
 
-        border-left: 5px solid #c7c7c7;
-        border-right: 5px solid #c7c7c7;
+        animation-name: botones;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
         background: #1f1f1f;
 
     }
@@ -993,14 +1026,21 @@ a{
 
     }
 
-    
     .divlogo{
 
         display: flex;
         justify-content: center;
         align-items: center;
-        grid-area: a1;
+        grid-area: logo;
     
+    }
+
+    .divlogo h1 a{
+
+        font-family: AnimeJAV;
+        color: rgb(255, 255, 255);
+        font-size: 6vw;
+
     }
 
     .divlogo img{
@@ -1086,7 +1126,6 @@ a{
 
     ul.slider{
 
-        
         position: relative;
 
     }
@@ -1138,11 +1177,26 @@ a{
        
     }
 
+    .ulmenumain li:hover{
+     
+        background-color: black;
+
+    }
+
     .ulmenumain li a{
 
         color: white;
+        opacity: 1;
 
     }
+
+    .ulmenumain li a:target{
+
+        color: black;
+        opacity: 1;
+        
+    }
+
     /* Index */
 
     /* Directorio Anime */
@@ -1180,8 +1234,6 @@ a{
         height: auto;
         grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw 12vw;
         grid-template-rows: 23vw 23vw 23vw 23vw;
-
-
         justify-content: center;
         justify-content: space-evenly;
 
@@ -1225,7 +1277,6 @@ a{
         align-items: center;
 
     }
-
 
     .h3emision{
 
@@ -1322,7 +1373,6 @@ a{
 
     }
     /* En emision */
-
 
     /* Q y A */    
     .mainqya{
@@ -1635,6 +1685,7 @@ a{
         font-size: 23px;
         text-decoration: none;
         padding: 5px;
+        margin-top: 3px;
         color: black;
         background-color: white;
         color: white transparent;
@@ -1645,7 +1696,10 @@ a{
     .sugeinputqya:hover{
 
         color: rgb(255, 255, 255);
-        border: 5px solid gray;
+        background: #1f1f1f;
+        animation-name: botones;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
         background: #1f1f1f;
 
     }
@@ -1740,7 +1794,9 @@ a{
     .boton:hover{
 
         color: rgb(255, 255, 255);
-        border: 5px solid gray;
+        animation-name: botones;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
         background: #1f1f1f;
 
     }
@@ -1804,7 +1860,6 @@ a{
         -ms-transform-origin-x: 50%;
         -ms-transform-origin-y: 50%;
     
-
     }
 
     footer a{
