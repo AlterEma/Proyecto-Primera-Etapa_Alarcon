@@ -1011,6 +1011,7 @@ a{
 
     .ilmenu:hover{
 
+        color: white;
         animation-name: botones;
         animation-duration: 4s;
         animation-iteration-count: infinite;
@@ -1065,7 +1066,7 @@ a{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        min-height: 370px;
+        padding-top: 20px;
         background-color: lightgrey;
 
     }
@@ -1085,8 +1086,7 @@ a{
      justify-content: center;
      align-items: center;
      font-size: 3vw;
-     width: 61vw;
-     margin: 20px;
+     width: 100%;
      color: white;    
      text-align: center;
      -ms-transform-origin-x: 50%;
@@ -1095,104 +1095,44 @@ a{
            
     }
 
-    .divmainindex{
+    .slide{
 
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-content: space-around;
-        width: 100%;
-        margin-bottom: 5vh;
-
-
-    }
-
-    .container{
-
-        height: auto;
-        width: 60vw;
-        padding: 30px 30px 5px 30px;
+        padding: 1vh 1vw 1vh 1vw;
         background-color: white;
-        box-sizing: border-box;
+        margin-top: 3px;
+        margin-bottom: 45px;
 
     }
 
-    .slider{
+    .slide img{
 
-        height: 50vh;
-        width: 100%;
-
-    }
-
-    .slider li img{
-
-        height: 50vh;
-        width: 100%;
+        height: 85vh;
 
     }
 
-    ul.slider{
-
-        position: relative;
-
-    }
-
-    ul.slider li{
-
-        position: absolute;
-        left: 0;
-        margin-top: 0;
-        opacity: 0;
-        width: inherit;
-        height: inherit;
-        transition:  opacity .5s;
-
-    }
-
-    ul.slider li:first-child{
-
-        opacity: 1;
-
-    }
-
-    ul.slider li:target{
-
-        opacity: 1;
-
-    }
-   
-    .ulmenumain{
-
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 4vh;
-        margin-top: 6px;
+    h5{
         
-    }
-
-    .ulmenumain li{
-
-        display: flex;
-        justify-content: center;
-        background-color: gray; 
-        height: 1vw;
-        width: 19px;
-        padding: 7px;
-        margin: 0px 10px 0px 10px;
-        border-radius: 100%;
-       
-    }
-
-    .ulmenumain li:hover{
-     
-        background-color: black;
+        color: black;
 
     }
 
-    .ulmenumain li a{
+    h5:hover{
 
-        color: white;
+        background-color: rgb(255, 255, 255, 0.9);
+        font-size: 2rem;
+
+    }
+
+    .generosindex{
+
+        color: black;
+
+    }
+
+    .generosindex:hover{
+
+        background-color: rgb(255, 255, 255, 0.9);
+        font-size: 1.5rem;
 
     }
     /* Index */
