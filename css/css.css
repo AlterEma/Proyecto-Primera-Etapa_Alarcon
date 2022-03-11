@@ -48,6 +48,534 @@
 
 }
 
+/* Mini juego */
+@keyframes violeta{
+
+    0%{ 
+
+        width: 0;
+        height: 0;
+        border-top: 150px solid blueviolet;
+        border-right: 62px solid transparent;
+        border-left: 62px solid transparent;
+        transform:rotate(-45deg);
+        position: relative;
+        top: 46px;
+        left: 46px;
+        z-index: 2;
+        grid-area: a1;
+
+      }
+
+    100%{ 
+
+        grid-area: a1;
+        width: 0;
+        height: 0;
+        padding-top: 150px;
+        border-top: 150px solid blueviolet;
+        border-right: 62px solid transparent;
+        border-left: 62px solid transparent;
+        transform:rotate(-45deg);
+        position: relative;
+        top: -7px;
+        left: -7px;
+        z-index: 3;
+        
+     }
+
+}
+
+@keyframes rojo{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-top: 150px solid red;
+        border-right: 62px solid transparent;
+        border-left: 62px solid transparent;
+        position: relative;
+        transform: rotate(0deg);
+        top: 25px;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-top: 150px;
+        border-top: 150px solid red;
+        border-right: 62px solid transparent;
+        border-left: 62px solid transparent;
+        position: relative;
+        transform: rotate(0deg);
+        bottom: 300px;
+        top: -50px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes naranja{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-top: 62px solid transparent;
+        border-right: 150px solid orange;
+        border-bottom: 62px solid transparent;
+        transform:rotate(-45deg);
+        position: relative;
+        top: 46px;
+        right: 46px;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-right: 150px;
+        border-top: 62px solid transparent;
+        border-right: 150px solid orange;
+        border-bottom: 62px solid transparent;
+        transform:rotate(-45deg);
+        position: relative;
+        top: -7px;
+        right: -7px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes amarillo{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-top: 62px solid transparent;
+        border-bottom: 62px solid transparent;
+        border-right: 150px solid yellow;
+        transform: rotate(0deg);
+        position: relative;
+        right: 25px;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-left: 150px;
+        border-top: 62px solid transparent;
+        border-bottom: 62px solid transparent;
+        border-right: 150px solid yellow;
+        transform: rotate(0deg);
+        position: relative;
+        right: -49px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes verde{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid green ;
+        border-left: 62px solid transparent;
+        transform:rotate(-45deg);
+        bottom: 46px;
+        right: 46px;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-bottom: 150px;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid green ;
+        border-left: 62px solid transparent;
+        transform:rotate(-45deg);
+        bottom: -5px;
+        right: -5px;
+        position: relative;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes celeste{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid rgb(135, 206, 235);
+        border-left: 62px solid transparent;
+        position: relative;
+        bottom: 25px;
+        z-index: 2; 
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-bottom: 150px;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid rgb(135, 206, 235);
+        border-left: 62px solid transparent;
+        position: relative;
+        bottom: -50px;
+        z-index: 3;
+    
+
+    }
+
+
+
+}
+
+@keyframes negro{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid black;
+        border-left: 62px solid transparent;
+        transform: rotate(45deg);
+        position: relative;
+        left: 46px;
+        bottom: 46px;
+        z-index: 2;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-bottom: 150px;
+        border-right: 62px solid transparent;
+        border-bottom: 150px solid black;
+        border-left: 62px solid transparent;
+        transform: rotate(45deg);
+        position: relative;
+        left: -5px;
+        bottom: -5px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes azul{
+
+    0%{
+
+        width: 0;
+        height: 0;
+        border-top: 62px solid transparent;
+        border-bottom: 62px solid transparent;
+        border-left: 150px solid blue;
+        position: relative;
+        left: 25px;
+
+    }
+
+    100%{
+
+        width: 0;
+        height: 0;
+        padding-left: 150px;
+        border-top: 62px solid transparent;
+        border-bottom: 62px solid transparent;
+        border-left: 150px solid blue;
+        position: relative;
+        left: -49px;
+        z-index: 3;
+
+    }
+
+}
+
+@keyframes animacio{
+
+    0%{
+
+        position: absolute;
+        left: -105px;
+        top: 500px;
+        z-index: 1;
+        height: auto;
+        width: auto;
+        background-color: aqua;
+
+    }
+
+}
+
+.contenedoranimacion{
+
+    position: absolute;
+    left: -170px;
+    top: 450px;
+
+}
+
+.contenedoranimacion:hover{
+
+    position: absolute;
+    top: 400px;
+    height: auto;
+    width: auto;
+
+}
+
+.minijuego{
+
+    position: fixed;
+    height: 300px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: "a1 a2 a3"
+                         "b1 b2 b3"
+                         "c1 c2 c3";
+
+    align-items: center;   
+    justify-items: center;    
+    transform: scale(0.3);
+
+}
+
+.minijuego:hover{
+
+    transform: scale(1.5);
+    padding-left: 537px;
+    padding-bottom: 400px;
+    top: 225px;
+
+}
+
+.imagenanimacion{
+
+    position: absolute;
+    grid-area: b2;
+    z-index: 0;
+
+}
+
+.unoanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 150px solid blueviolet;
+    border-right: 62px solid transparent;
+    border-left: 62px solid transparent;
+    transform:rotate(-45deg);
+    position: relative;
+    top: 46px;
+    left: 46px;
+
+}
+
+.unoanimacion:hover {
+
+    animation-name: violeta;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+
+}
+
+.dosanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 150px solid red;
+    border-right: 62px solid transparent;
+    border-left: 62px solid transparent;
+    position: relative;
+    top: 25px;
+
+}
+
+.dosanimacion:hover {
+
+    animation-name: rojo;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+
+}
+
+
+.tresanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 62px solid transparent;
+    border-right: 150px solid orange;
+    border-bottom: 62px solid transparent;
+    transform:rotate(-45deg);
+    position: relative;
+    top: 46px;
+    right: 46px;
+
+}
+
+.tresanimacion:hover{
+
+    animation-name: naranja;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.cuatroanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 62px solid transparent;
+    border-bottom: 62px solid transparent;
+    border-left: 150px solid blue;
+    position: relative;
+    left: 25px;
+
+}
+
+.cuatroanimacion:hover{
+
+    animation-name: azul;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.cincoanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 150px solid red;
+    border-right: 62px solid transparent;
+    border-left: 62px solid transparent;
+    transform:rotate(-45deg);
+    position: relative;
+    border-top: 46px;
+    right: 46px;
+
+}
+
+.seisanimacion{
+
+    width: 0;
+    height: 0;
+    border-top: 62px solid transparent;
+    border-bottom: 62px solid transparent;
+    border-right: 150px solid yellow;
+    position: relative;
+    right: 25px;
+
+}
+
+.seisanimacion:hover{
+
+    animation-name: amarillo;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+ 
+}
+
+.sieteanimacion{
+
+    width: 0;
+    height: 0;
+    border-right: 62px solid transparent;
+    border-bottom: 150px solid black;
+    border-left: 62px solid transparent;
+    transform: rotate(45deg);
+    position: relative;
+    left: 46px;
+    bottom: 46px;
+
+}
+
+.sieteanimacion:hover{
+
+    animation-name: negro;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.ochoanimacion{
+
+    width: 0;
+    height: 0;
+    border-right: 62px solid transparent;
+    border-bottom: 150px solid rgb(135, 206, 235);
+    border-left: 62px solid transparent;
+    position: relative;
+    bottom: 25px;
+
+
+}
+
+.ochoanimacion:hover{
+
+    animation-name: celeste;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+
+.nueveanimacion{
+
+    width: 0;
+    height: 0;
+    border-right: 62px solid transparent;
+    border-bottom: 150px solid green ;
+    border-left: 62px solid transparent;
+    transform:rotate(-45deg);
+    bottom: 46px;
+    right: 46px;
+    position: relative;
+
+}
+
+.nueveanimacion:hover{
+
+    animation-name: verde;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+
+}
+/* Mini juego */
+
+
 /* Universal*/
 ul, li{
     list-style: none;
