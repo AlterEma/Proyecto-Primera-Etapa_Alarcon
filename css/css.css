@@ -1443,9 +1443,9 @@ a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vw;
-        width: 55vw;
-        padding: 3vw 3vw 1vw 3vw;
+        height: auto;
+        width: 59vw;
+        padding: 4vw 3vw 2vw 3vw;
         background-color: black;
         border-radius: 4px;
         box-shadow: 7px 13px 37px #000;
@@ -1488,7 +1488,7 @@ a{
         font-size: 4vw;
         height: 2vw;
         padding: 2vw;
-        margin-bottom: 4vw;
+        margin-bottom: 3vw;
         width: 100%;
 
     }
@@ -1511,9 +1511,10 @@ a{
 
         display: flex;
         justify-content: center;
-        padding: 2vw;
+        align-items: center;
         margin-top: 1vw;
         margin-bottom: 2vw;
+        height: 12vw;
         width: 70%;
         font-size: 5vw;
         color: black;
